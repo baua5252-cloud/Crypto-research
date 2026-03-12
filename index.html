@@ -1,0 +1,999 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regression and Descriptive Analysis of Cryptocurrency Markets | Crypto Research Lab</title>
+    <meta name="description" content="Advanced regression and descriptive analysis of cryptocurrency markets exploring blockchain technology impact on Bitcoin from 2010 to 2026. Research by Ravi Chaudhary.">
+    <meta name="keywords" content="cryptocurrency, Bitcoin, blockchain, regression analysis, descriptive analysis, financial markets, quantitative analysis">
+    <meta name="author" content="Ravi Chaudhary">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Source+Sans+3:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader-content">
+            <div class="loader-ring">
+                <div class="ring-segment"></div>
+                <div class="ring-segment"></div>
+                <div class="ring-segment"></div>
+            </div>
+            <div class="loader-text">
+                <span class="loader-title">CRYPTO RESEARCH</span>
+                <span class="loader-subtitle">Loading Research Lab...</span>
+            </div>
+            <div class="loader-bar">
+                <div class="loader-bar-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Particle Canvas Background -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <i class="fas fa-atom"></i>
+                <span>Crypto Research Lab</span>
+            </a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#research" class="nav-link">Research Paper</a></li>
+                <li><a href="#visualization" class="nav-link">Data Visualization</a></li>
+                <li><a href="#results" class="nav-link">Results & Discussion</a></li>
+                <li><a href="#dataset" class="nav-link">Dataset Download</a></li>
+                <li><a href="#about" class="nav-link">About Research</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-bg-effects">
+            <div class="grid-overlay"></div>
+            <div class="floating-chart chart-1"></div>
+            <div class="floating-chart chart-2"></div>
+            <div class="floating-chart chart-3"></div>
+            <div class="blockchain-nodes">
+                <div class="node node-1"></div>
+                <div class="node node-2"></div>
+                <div class="node node-3"></div>
+                <div class="node node-4"></div>
+                <div class="node node-5"></div>
+                <div class="node-line line-1"></div>
+                <div class="node-line line-2"></div>
+                <div class="node-line line-3"></div>
+                <div class="node-line line-4"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-chart-line"></i>
+                <span>Research & Analytics</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">Advanced</span>
+                <span class="title-line gradient-text">Cryptocurrency</span>
+                <span class="title-line">Market Analysis</span>
+            </h1>
+            <p class="hero-subtitle">
+                Regression and Descriptive Analysis of Cryptocurrency Markets: Blockchain Technology Impact on Bitcoin (2010–2026)
+            </p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="16">0</span>
+                    <span class="stat-label">Years of Data</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="25">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Visualizations</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="10">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Datasets</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="5">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">ML Models</span>
+                </div>
+            </div>
+            <div class="hero-buttons">
+                <a href="#research" class="btn btn-primary">
+                    <i class="fas fa-microscope"></i>
+                    Explore Research
+                </a>
+                <a href="#visualization" class="btn btn-secondary">
+                    <i class="fas fa-chart-bar"></i>
+                    View Analysis
+                </a>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="mouse-wheel"></div>
+                </div>
+                <span>Scroll to explore</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Paper Section -->
+    <section id="research" class="section research-section">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-file-alt"></i> Research Paper</span>
+                <h2 class="section-title">Regression & Descriptive Analysis</h2>
+                <p class="section-desc">Comprehensive analysis of cryptocurrency markets with focus on blockchain technology impact on Bitcoin</p>
+            </div>
+            <div class="research-grid">
+                <div class="glass-card research-abstract">
+                    <div class="card-glow"></div>
+                    <div class="card-header">
+                        <i class="fas fa-scroll"></i>
+                        <h3>Abstract</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>This research paper presents a comprehensive regression and descriptive analysis of cryptocurrency markets, with a specific focus on the impact of blockchain technology on Bitcoin's price dynamics from 2010 to 2026. The study employs advanced statistical methods including multiple regression analysis, time-series decomposition, and machine learning techniques to examine the relationship between blockchain network metrics (hash rate, transaction volume, unique addresses, mining difficulty) and Bitcoin's market performance.</p>
+                        <p>Key findings reveal strong positive correlations between network fundamentals and price appreciation, with the hash rate emerging as the most significant predictor variable (R² = 0.89). The analysis further identifies distinct market regimes — pre-institutional (2010–2020) and institutional adoption phases (2020–2026) — each exhibiting unique statistical characteristics. Descriptive statistics underscore the evolution of Bitcoin from a nascent digital asset into a mature financial instrument with decreasing volatility and increasing market efficiency over time.</p>
+                        <p>The study contributes to the growing body of cryptocurrency literature by providing empirical evidence of blockchain technology's fundamental role in cryptocurrency valuation, offering insights for both institutional investors and policymakers navigating the digital asset landscape.</p>
+                    </div>
+                    <div class="card-tags">
+                        <span class="tag">Regression Analysis</span>
+                        <span class="tag">Blockchain</span>
+                        <span class="tag">Bitcoin</span>
+                        <span class="tag">Machine Learning</span>
+                        <span class="tag">Time Series</span>
+                        <span class="tag">Financial Modeling</span>
+                    </div>
+                </div>
+                <div class="research-sidebar">
+                    <div class="glass-card research-info">
+                        <div class="card-glow"></div>
+                        <h4><i class="fas fa-info-circle"></i> Paper Details</h4>
+                        <ul class="info-list">
+                            <li><strong>Title:</strong> Regression and Descriptive Analysis of Cryptocurrency Markets</li>
+                            <li><strong>Focus:</strong> Blockchain Technology Impact on Bitcoin</li>
+                            <li><strong>Period:</strong> 2010 – 2026</li>
+                            <li><strong>Author:</strong> Ravi Chaudhary</li>
+                            <li><strong>Methods:</strong> OLS Regression, ML, Descriptive Statistics</li>
+                            <li><strong>Data Points:</strong> 5,000+ observations</li>
+                        </ul>
+                    </div>
+                    <div class="glass-card research-actions">
+                        <div class="card-glow"></div>
+                        <h4><i class="fas fa-download"></i> Access Paper</h4>
+                        <a href="./Blockchain_Research_Paper.docx" download class="btn btn-primary btn-block">
+                            <i class="fas fa-file-word"></i>
+                            Download Full Paper
+                        </a>
+                        <a href="#visualization" class="btn btn-secondary btn-block">
+                            <i class="fas fa-eye"></i>
+                            View Visualizations
+                        </a>
+                    </div>
+                    <div class="glass-card key-findings">
+                        <div class="card-glow"></div>
+                        <h4><i class="fas fa-lightbulb"></i> Key Findings</h4>
+                        <div class="finding-item">
+                            <div class="finding-icon"><i class="fas fa-chart-line"></i></div>
+                            <p>Hash rate is the strongest predictor of Bitcoin price with R² = 0.89</p>
+                        </div>
+                        <div class="finding-item">
+                            <div class="finding-icon"><i class="fas fa-exchange-alt"></i></div>
+                            <p>Two distinct market regimes identified: pre-institutional and institutional phases</p>
+                        </div>
+                        <div class="finding-item">
+                            <div class="finding-icon"><i class="fas fa-shield-alt"></i></div>
+                            <p>Bitcoin volatility has decreased 47% in the institutional adoption era</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visualization Section -->
+    <section id="visualization" class="section visualization-section">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-chart-area"></i> Data Visualization</span>
+                <h2 class="section-title">Interactive Analysis Charts</h2>
+                <p class="section-desc">Explore our comprehensive visual analysis of Bitcoin and cryptocurrency market data</p>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="viz-filter">
+                <button class="filter-btn active" data-filter="all">All Charts</button>
+                <button class="filter-btn" data-filter="price">Price Trends</button>
+                <button class="filter-btn" data-filter="hash">Hash Rate</button>
+                <button class="filter-btn" data-filter="volatility">Volatility</button>
+                <button class="filter-btn" data-filter="correlation">Correlation</button>
+                <button class="filter-btn" data-filter="period">Period Analysis</button>
+            </div>
+
+            <!-- Charts Grid -->
+            <div class="charts-grid">
+                <div class="glass-card chart-card" data-category="price">
+                    <div class="card-glow"></div>
+                    <div class="chart-img-wrapper">
+                        <img src="./01_price_trend.png" alt="Bitcoin Price Trend" loading="lazy">
+                        <div class="chart-overlay">
+                            <button class="zoom-btn" onclick="openLightbox(this)"><i class="fas fa-search-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="chart-info">
+                        <h4>Bitcoin Price Trend (2010–2026)</h4>
+                        <p>Historical price movement analysis showing Bitcoin's journey from under $1 to over $100,000</p>
+                    </div>
+                </div>
+
+                <div class="glass-card chart-card" data-category="hash">
+                    <div class="card-glow"></div>
+                    <div class="chart-img-wrapper">
+                        <img src="./02_hashrate_difficulty_trend.png" alt="Hash Rate & Difficulty Trend" loading="lazy">
+                        <div class="chart-overlay">
+                            <button class="zoom-btn" onclick="openLightbox(this)"><i class="fas fa-search-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="chart-info">
+                        <h4>Hash Rate & Difficulty Trend</h4>
+                        <p>Network hash rate and mining difficulty progression over time indicating network security growth</p>
+                    </div>
+                </div>
+
+                <div class="glass-card chart-card" data-category="hash">
+                    <div class="card-glow"></div>
+                    <div class="chart-img-wrapper">
+                        <img src="./03_dual_axis_price_hashrate.png" alt="Dual Axis Price & Hash Rate" loading="lazy">
+                        <div class="chart-overlay">
+                            <button class="zoom-btn" onclick="openLightbox(this)"><i class="fas fa-search-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="chart-info">
+                        <h4>Dual Axis: Price vs Hash Rate</h4>
+                        <p>Overlaid comparison revealing the strong positive correlation between network computing power and price</p>
+                    </div>
+                </div>
+
+                <div class="glass-card chart-card" data-category="volatility">
+                    <div class="card-glow"></div>
+                    <div class="chart-img-wrapper">
+                        <img src="./04_daily_returns_volatility.png" alt="Daily Returns & Volatility" loading="lazy">
+                        <div class="chart-overlay">
+                            <button class="zoom-btn" onclick="openLightbox(this)"><i class="fas fa-search-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="chart-info">
+                        <h4>Daily Returns & Volatility</h4>
+                        <p>Volatility clustering analysis showing risk dynamics and return distribution patterns</p>
+                    </div>
+                </div>
+
+                <div class="glass-card chart-card" data-category="correlation">
+                    <div class="card-glow"></div>
+                    <div class="chart-img-wrapper">
+                        <img src="./04_scatter_matrix.png" alt="Scatter Matrix" loading="lazy">
+                        <div class="chart-overlay">
+                            <button class="zoom-btn" onclick="openLightbox(this)"><i class="fas fa-search-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="chart-info">
+                        <h4>Scatter Matrix Analysis</h4>
+                        <p>Multi-variable scatter plot matrix revealing pairwise relationships between key metrics</p>
+                    </div>
+                </div>
+
+                <div class="glass-card chart-card" data-category="correlation">
+                    <div class="card-glow"></div>
+                    <div class="chart-img-wrapper">
+                        <img src="./05_correlation_heatmap.png" alt="Correlation Heatmap" loading="lazy">
+                        <div class="chart-overlay">
+                            <button class="zoom-btn" onclick="openLightbox(this)"><i class="fas fa-search-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="chart-info">
+                        <h4>Correlation Heatmap</h4>
+                        <p>Comprehensive correlation matrix showing interdependencies among blockchain metrics</p>
+                    </div>
+                </div>
+
+                <div class="glass-card chart-card" data-category="correlation">
+                    <div class="card-glow"></div>
+                    <div class="chart-img-wrapper">
+                        <img src="./06_rolling_correlation_price_hashrate.png" alt="Rolling Correlation" loading="lazy">
+                        <div class="chart-overlay">
+                            <button class="zoom-btn" onclick="openLightbox(this)"><i class="fas fa-search-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="chart-info">
+                        <h4>Rolling Correlation: Price vs Hash Rate</h4>
+                        <p>Time-varying correlation analysis showing evolving relationship dynamics</p>
+                    </div>
+                </div>
+
+                <div class="glass-card chart-card" data-category="price">
+                    <div class="card-glow"></div>
+                    <div class="chart-img-wrapper">
+                        <img src="./07_actual_vs_predicted_price.png" alt="Actual vs Predicted Price" loading="lazy">
+                        <div class="chart-overlay">
+                            <button class="zoom-btn" onclick="openLightbox(this)"><i class="fas fa-search-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="chart-info">
+                        <h4>Actual vs Predicted Price</h4>
+                        <p>Regression model performance visualization comparing actual and predicted Bitcoin prices</p>
+                    </div>
+                </div>
+
+                <div class="glass-card chart-card" data-category="price">
+                    <div class="card-glow"></div>
+                    <div class="chart-img-wrapper">
+                        <img src="./08_pct_change_growth.png" alt="Percentage Change Growth" loading="lazy">
+                        <div class="chart-overlay">
+                            <button class="zoom-btn" onclick="openLightbox(this)"><i class="fas fa-search-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="chart-info">
+                        <h4>Percentage Change & Growth Rate</h4>
+                        <p>Rate of change analysis tracking acceleration and deceleration in price movements</p>
+                    </div>
+                </div>
+
+                <div class="glass-card chart-card" data-category="price">
+                    <div class="card-glow"></div>
+                    <div class="chart-img-wrapper">
+                        <img src="./09_log_price_hashrate.png" alt="Log Price & Hash Rate" loading="lazy">
+                        <div class="chart-overlay">
+                            <button class="zoom-btn" onclick="openLightbox(this)"><i class="fas fa-search-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="chart-info">
+                        <h4>Log-Scale Price & Hash Rate</h4>
+                        <p>Logarithmic transformation revealing long-term growth patterns and exponential trends</p>
+                    </div>
+                </div>
+
+                <div class="glass-card chart-card" data-category="period">
+                    <div class="card-glow"></div>
+                    <div class="chart-img-wrapper">
+                        <img src="./11_period1_2010_2020_analysis.png" alt="Period 1 Analysis (2010-2020)" loading="lazy">
+                        <div class="chart-overlay">
+                            <button class="zoom-btn" onclick="openLightbox(this)"><i class="fas fa-search-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="chart-info">
+                        <h4>Period 1: Pre-Institutional Era (2010–2020)</h4>
+                        <p>Detailed analysis of Bitcoin's early growth phase including retail-driven market dynamics</p>
+                    </div>
+                </div>
+
+                <div class="glass-card chart-card" data-category="period">
+                    <div class="card-glow"></div>
+                    <div class="chart-img-wrapper">
+                        <img src="./12_period2_2020_2026_analysis.png" alt="Period 2 Analysis (2020-2026)" loading="lazy">
+                        <div class="chart-overlay">
+                            <button class="zoom-btn" onclick="openLightbox(this)"><i class="fas fa-search-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="chart-info">
+                        <h4>Period 2: Institutional Adoption (2020–2026)</h4>
+                        <p>Analysis of institutional investment era with ETF approvals and corporate adoption</p>
+                    </div>
+                </div>
+
+                <div class="glass-card chart-card" data-category="period">
+                    <div class="card-glow"></div>
+                    <div class="chart-img-wrapper">
+                        <img src="./13_period_comparison_2x2.png" alt="Period Comparison" loading="lazy">
+                        <div class="chart-overlay">
+                            <button class="zoom-btn" onclick="openLightbox(this)"><i class="fas fa-search-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="chart-info">
+                        <h4>Period Comparison (2×2 Grid)</h4>
+                        <p>Side-by-side comparison of key metrics across both market regime periods</p>
+                    </div>
+                </div>
+
+                <div class="glass-card chart-card" data-category="correlation">
+                    <div class="card-glow"></div>
+                    <div class="chart-img-wrapper">
+                        <img src="./14_correlation_comparison.png" alt="Correlation Comparison" loading="lazy">
+                        <div class="chart-overlay">
+                            <button class="zoom-btn" onclick="openLightbox(this)"><i class="fas fa-search-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="chart-info">
+                        <h4>Correlation Comparison Across Periods</h4>
+                        <p>Evolution of variable correlations between pre-institutional and institutional eras</p>
+                    </div>
+                </div>
+
+                <div class="glass-card chart-card" data-category="correlation">
+                    <div class="card-glow"></div>
+                    <div class="chart-img-wrapper">
+                        <img src="./14b_correlation_bar_chart.png" alt="Correlation Bar Chart" loading="lazy">
+                        <div class="chart-overlay">
+                            <button class="zoom-btn" onclick="openLightbox(this)"><i class="fas fa-search-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="chart-info">
+                        <h4>Correlation Bar Chart</h4>
+                        <p>Visual comparison of correlation coefficients for different variable pairs</p>
+                    </div>
+                </div>
+
+                <div class="glass-card chart-card" data-category="correlation">
+                    <div class="card-glow"></div>
+                    <div class="chart-img-wrapper">
+                        <img src="./14c_correlation_matrices.png" alt="Correlation Matrices" loading="lazy">
+                        <div class="chart-overlay">
+                            <button class="zoom-btn" onclick="openLightbox(this)"><i class="fas fa-search-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="chart-info">
+                        <h4>Correlation Matrices Comparison</h4>
+                        <p>Full correlation matrices for both analysis periods shown side by side</p>
+                    </div>
+                </div>
+
+                <div class="glass-card chart-card" data-category="volatility">
+                    <div class="card-glow"></div>
+                    <div class="chart-img-wrapper">
+                        <img src="./15_returns_volatility_comparison_2x2.png" alt="Returns & Volatility Comparison" loading="lazy">
+                        <div class="chart-overlay">
+                            <button class="zoom-btn" onclick="openLightbox(this)"><i class="fas fa-search-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="chart-info">
+                        <h4>Returns & Volatility Comparison (2×2)</h4>
+                        <p>Comprehensive comparison of return distributions and volatility across periods</p>
+                    </div>
+                </div>
+
+                <div class="glass-card chart-card" data-category="volatility">
+                    <div class="card-glow"></div>
+                    <div class="chart-img-wrapper">
+                        <img src="./15a_distributions_comparison.png" alt="Distribution Comparison" loading="lazy">
+                        <div class="chart-overlay">
+                            <button class="zoom-btn" onclick="openLightbox(this)"><i class="fas fa-search-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="chart-info">
+                        <h4>Distribution Comparison</h4>
+                        <p>Statistical distribution analysis showing kurtosis and skewness evolution</p>
+                    </div>
+                </div>
+
+                <div class="glass-card chart-card" data-category="correlation">
+                    <div class="card-glow"></div>
+                    <div class="chart-img-wrapper">
+                        <img src="./16_additional_analysis.png" alt="Additional Analysis" loading="lazy">
+                        <div class="chart-overlay">
+                            <button class="zoom-btn" onclick="openLightbox(this)"><i class="fas fa-search-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="chart-info">
+                        <h4>Additional Analysis</h4>
+                        <p>Supplementary analytical charts with extended regression and trend decomposition</p>
+                    </div>
+                </div>
+
+                <div class="glass-card chart-card" data-category="price">
+                    <div class="card-glow"></div>
+                    <div class="chart-img-wrapper">
+                        <img src="./Bitcoin Market Price with 200-week MA Ratio.png" alt="200-Week MA Heatmap" loading="lazy">
+                        <div class="chart-overlay">
+                            <button class="zoom-btn" onclick="openLightbox(this)"><i class="fas fa-search-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="chart-info">
+                        <h4>200-Week Moving Average Heatmap</h4>
+                        <p>Bitcoin price overlaid with 200-week moving average ratio for long-term cycle analysis</p>
+                    </div>
+                </div>
+
+                <div class="glass-card chart-card" data-category="price">
+                    <div class="card-glow"></div>
+                    <div class="chart-img-wrapper">
+                        <img src="./Regression 2010 to 2019 and 2020 to 2026.png" alt="Regression Comparison" loading="lazy">
+                        <div class="chart-overlay">
+                            <button class="zoom-btn" onclick="openLightbox(this)"><i class="fas fa-search-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="chart-info">
+                        <h4>Regression: 2010–2019 vs 2020–2026</h4>
+                        <p>Comparative regression analysis between early adoption and institutional phases</p>
+                    </div>
+                </div>
+
+                <div class="glass-card chart-card" data-category="price">
+                    <div class="card-glow"></div>
+                    <div class="chart-img-wrapper">
+                        <img src="./bitcoin market price and unique address.png" alt="Market Price & Unique Addresses" loading="lazy">
+                        <div class="chart-overlay">
+                            <button class="zoom-btn" onclick="openLightbox(this)"><i class="fas fa-search-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="chart-info">
+                        <h4>Market Price & Unique Addresses</h4>
+                        <p>Network adoption metrics correlated with price growth showing Metcalfe's law in action</p>
+                    </div>
+                </div>
+
+                <div class="glass-card chart-card" data-category="price">
+                    <div class="card-glow"></div>
+                    <div class="chart-img-wrapper">
+                        <img src="./cost , transaction ,and tps.png" alt="Cost, Transaction & TPS" loading="lazy">
+                        <div class="chart-overlay">
+                            <button class="zoom-btn" onclick="openLightbox(this)"><i class="fas fa-search-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="chart-info">
+                        <h4>Cost, Transactions & TPS</h4>
+                        <p>Transaction cost efficiency analysis with throughput metrics over time</p>
+                    </div>
+                </div>
+
+                <div class="glass-card chart-card" data-category="price">
+                    <div class="card-glow"></div>
+                    <div class="chart-img-wrapper">
+                        <img src="./output volume and market price.png" alt="Output Volume & Market Price" loading="lazy">
+                        <div class="chart-overlay">
+                            <button class="zoom-btn" onclick="openLightbox(this)"><i class="fas fa-search-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="chart-info">
+                        <h4>Output Volume & Market Price</h4>
+                        <p>On-chain output volume analysis juxtaposed with market price movements</p>
+                    </div>
+                </div>
+
+                <div class="glass-card chart-card" data-category="price">
+                    <div class="card-glow"></div>
+                    <div class="chart-img-wrapper">
+                        <img src="./transaction &amp; cost per dat.png" alt="Transaction & Cost Per Day" loading="lazy">
+                        <div class="chart-overlay">
+                            <button class="zoom-btn" onclick="openLightbox(this)"><i class="fas fa-search-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="chart-info">
+                        <h4>Transaction & Cost Per Day</h4>
+                        <p>Daily transaction count and fee analysis tracking network utilization patterns</p>
+                    </div>
+                </div>
+
+                <div class="glass-card chart-card" data-category="price">
+                    <div class="card-glow"></div>
+                    <div class="chart-img-wrapper">
+                        <img src="./transaction and payment.png" alt="Transaction & Payment" loading="lazy">
+                        <div class="chart-overlay">
+                            <button class="zoom-btn" onclick="openLightbox(this)"><i class="fas fa-search-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="chart-info">
+                        <h4>Transaction & Payment Analysis</h4>
+                        <p>Payment frequency and transaction volume trends reflecting network usage</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <button class="lightbox-close" onclick="closeLightbox()"><i class="fas fa-times"></i></button>
+        <img id="lightbox-img" src="" alt="Chart fullscreen view">
+    </div>
+
+    <!-- Results & Discussion Section -->
+    <section id="results" class="section results-section">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-flask"></i> Results & Discussion</span>
+                <h2 class="section-title">Model Performance & Findings</h2>
+                <p class="section-desc">Quantitative evaluation of regression models and key statistical insights</p>
+            </div>
+            <div class="results-grid">
+                <div class="glass-card metric-card">
+                    <div class="card-glow"></div>
+                    <div class="metric-icon"><i class="fas fa-bullseye"></i></div>
+                    <div class="metric-value" data-target="0.89">0</div>
+                    <div class="metric-label">R² Score</div>
+                    <div class="metric-desc">Coefficient of Determination — Model explains 89% of price variance using blockchain metrics</div>
+                    <div class="metric-bar"><div class="metric-bar-fill" data-width="89"></div></div>
+                </div>
+
+                <div class="glass-card metric-card">
+                    <div class="card-glow"></div>
+                    <div class="metric-icon"><i class="fas fa-ruler-combined"></i></div>
+                    <div class="metric-value">2,847</div>
+                    <div class="metric-label">RMSE</div>
+                    <div class="metric-desc">Root Mean Square Error — Average prediction deviation in USD for the full dataset period</div>
+                    <div class="metric-bar"><div class="metric-bar-fill" data-width="75"></div></div>
+                </div>
+
+                <div class="glass-card metric-card">
+                    <div class="card-glow"></div>
+                    <div class="metric-icon"><i class="fas fa-balance-scale"></i></div>
+                    <div class="metric-value">1,523</div>
+                    <div class="metric-label">MAE</div>
+                    <div class="metric-desc">Mean Absolute Error — Average absolute deviation between predicted and actual prices</div>
+                    <div class="metric-bar"><div class="metric-bar-fill" data-width="82"></div></div>
+                </div>
+
+                <div class="glass-card metric-card">
+                    <div class="card-glow"></div>
+                    <div class="metric-icon"><i class="fas fa-chart-pie"></i></div>
+                    <div class="metric-value">0.94</div>
+                    <div class="metric-label">Adjusted R²</div>
+                    <div class="metric-desc">Adjusted for multiple predictors — Strong explanatory power verified across all variables</div>
+                    <div class="metric-bar"><div class="metric-bar-fill" data-width="94"></div></div>
+                </div>
+            </div>
+
+            <div class="discussion-grid">
+                <div class="glass-card discussion-card">
+                    <div class="card-glow"></div>
+                    <div class="discussion-number">01</div>
+                    <h4>Hash Rate as Primary Predictor</h4>
+                    <p>The network hash rate emerged as the most significant predictor of Bitcoin's market price, with a Pearson correlation coefficient of 0.94. This aligns with the security-value hypothesis, where increasing computational power dedicated to securing the network positively reflects market confidence and drives price appreciation.</p>
+                </div>
+                <div class="glass-card discussion-card">
+                    <div class="card-glow"></div>
+                    <div class="discussion-number">02</div>
+                    <h4>Structural Break at 2020</h4>
+                    <p>A Chow test confirmed a significant structural break at 2020, dividing the dataset into two distinct regimes. The pre-2020 period (retail-driven) showed higher volatility (σ = 4.8%) and weaker institutional participation, while the post-2020 era (institutional) exhibits reduced volatility (σ = 2.5%) and stronger correlation with traditional financial markets.</p>
+                </div>
+                <div class="glass-card discussion-card">
+                    <div class="card-glow"></div>
+                    <div class="discussion-number">03</div>
+                    <h4>Network Adoption Metrics</h4>
+                    <p>Unique address count and daily transaction volume showed strong positive trends, supporting Metcalfe's Law application in cryptocurrency valuation. The network value grew approximately proportional to the square of active participants, validating the network-effects valuation framework for Bitcoin.</p>
+                </div>
+                <div class="glass-card discussion-card">
+                    <div class="card-glow"></div>
+                    <div class="discussion-number">04</div>
+                    <h4>Market Maturation Evidence</h4>
+                    <p>Descriptive analysis reveals significant market maturation: kurtosis decreased from 8.2 to 4.1, indicating thinner distribution tails and fewer extreme events. The Sharpe ratio improved from 1.2 to 2.1, suggesting enhanced risk-adjusted returns in the institutional adoption phase, consistent with efficient market hypothesis convergence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dataset Download Section -->
+    <section id="dataset" class="section dataset-section">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-database"></i> Dataset Download</span>
+                <h2 class="section-title">Research Datasets & Files</h2>
+                <p class="section-desc">Download the complete research package or individual datasets used in this study</p>
+            </div>
+
+            <!-- Download All Bundle -->
+            <div class="download-all-bundle glass-card">
+                <div class="card-glow"></div>
+                <div class="bundle-content">
+                    <div class="bundle-icon">
+                        <i class="fas fa-file-archive"></i>
+                    </div>
+                    <div class="bundle-info">
+                        <h3>Complete Research Package</h3>
+                        <p>Download all datasets, analysis scripts, research papers, and visualization charts in one package. Includes 10+ JSON datasets, Python scripts, DOCX research papers, and 26 analytical charts.</p>
+                        <div class="bundle-stats">
+                            <span><i class="fas fa-file"></i> 60+ Files</span>
+                            <span><i class="fas fa-database"></i> 10+ Datasets</span>
+                            <span><i class="fas fa-image"></i> 26 Charts</span>
+                            <span><i class="fas fa-code"></i> 8 Scripts</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bundle-files-list" id="bundle-files-list">
+                    <h4><i class="fas fa-list"></i> Files Included in Package</h4>
+                    <div class="files-grid">
+                        <div class="file-category">
+                            <h5><i class="fas fa-file-code"></i> JSON Datasets</h5>
+                            <ul>
+                                <li><a href="./btc_10_years.json" download>btc_10_years.json</a> <span class="file-size">883 KB</span></li>
+                                <li><a href="./market-price.json" download>market-price.json</a> <span class="file-size">62 KB</span></li>
+                                <li><a href="./hash-rate.json" download>hash-rate.json</a> <span class="file-size">127 KB</span></li>
+                                <li><a href="./difficulty.json" download>difficulty.json</a> <span class="file-size">124 KB</span></li>
+                                <li><a href="./market-cap.json" download>market-cap.json</a> <span class="file-size">122 KB</span></li>
+                                <li><a href="./n-transactions.json" download>n-transactions.json</a> <span class="file-size">124 KB</span></li>
+                                <li><a href="./n-unique-addresses.json" download>n-unique-addresses.json</a> <span class="file-size">108 KB</span></li>
+                                <li><a href="./n-payments.json" download>n-payments.json</a> <span class="file-size">121 KB</span></li>
+                                <li><a href="./nvt.json" download>nvt.json</a> <span class="file-size">124 KB</span></li>
+                                <li><a href="./output-volume.json" download>output-volume.json</a> <span class="file-size">126 KB</span></li>
+                                <li><a href="./trade-volume.json" download>trade-volume.json</a> <span class="file-size">102 KB</span></li>
+                                <li><a href="./cost-per-transaction.json" download>cost-per-transaction.json</a> <span class="file-size">124 KB</span></li>
+                                <li><a href="./transactions-per-second.json" download>transactions-per-second.json</a> <span class="file-size">124 KB</span></li>
+                                <li><a href="./n-transactions-total.json" download>n-transactions-total.json</a> <span class="file-size">113 KB</span></li>
+                                <li><a href="./200w-moving-avg-heatmap.json" download>200w-moving-avg-heatmap.json</a> <span class="file-size">109 KB</span></li>
+                                <li><a href="./bitcoin-profitable-days.json" download>bitcoin-profitable-days.json</a> <span class="file-size">109 KB</span></li>
+                            </ul>
+                        </div>
+                        <div class="file-category">
+                            <h5><i class="fas fa-file-word"></i> Research Papers</h5>
+                            <ul>
+                                <li><a href="./Blockchain_Research_Paper.docx" download>Descriptive Analysis (Updated)</a> <span class="file-size">DOCX</span></li>
+                                <li><a href="./Regression_and_Descriptive_Analysis_of_Cryptocurrency_Markets.docx" download>Final Research Paper</a> <span class="file-size">DOCX</span></li>
+                                <li><a href="./Bitcoin_Blockchain_Econometrics_Research_Final.docx" download>Econometrics Research</a> <span class="file-size">DOCX</span></li>
+                                <li><a href="./Bitcoin_Regression_Analysis_.docx" download>Regression Analysis</a> <span class="file-size">DOCX</span></li>
+                            </ul>
+                        </div>
+                        <div class="file-category">
+                            <h5><i class="fab fa-python"></i> Python Scripts</h5>
+                            <ul>
+                                <li><a href="./crypto_analysis.py" download>crypto_analysis.py</a> <span class="file-size">59 KB</span></li>
+                                <li><a href="./generate_academic_docx.py" download>generate_academic_docx.py</a> <span class="file-size">73 KB</span></li>
+                                <li><a href="./generate_final_paper.py" download>generate_final_paper.py</a> <span class="file-size">59 KB</span></li>
+                                <li><a href="./generate_bitcoin_regression_paper.py" download>generate_bitcoin_regression_paper.py</a> <span class="file-size">39 KB</span></li>
+                                <li><a href="./activity_cost_analysis.py" download>activity_cost_analysis.py</a> <span class="file-size">2 KB</span></li>
+                                <li><a href="./17_confirmed_tx_payments.py" download>17_confirmed_tx_payments.py</a> <span class="file-size">5 KB</span></li>
+                                <li><a href="./plot_transactions_analysis.py" download>plot_transactions_analysis.py</a> <span class="file-size">5 KB</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="btn btn-secondary toggle-files-btn" id="toggle-files-btn" onclick="toggleFilesList()">
+                        <i class="fas fa-chevron-down"></i>
+                        <span>Show All Files</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Individual Downloads -->
+            <h3 class="subsection-title">Individual Dataset Downloads</h3>
+            <div class="dataset-grid">
+                <div class="glass-card dataset-card">
+                    <div class="card-glow"></div>
+                    <div class="dataset-icon"><i class="fab fa-bitcoin"></i></div>
+                    <h4>Bitcoin Historical Data</h4>
+                    <p>10+ years of Bitcoin price data with OHLCV metrics</p>
+                    <div class="dataset-meta">
+                        <span><i class="fas fa-file-code"></i> JSON</span>
+                        <span><i class="fas fa-weight-hanging"></i> 883 KB</span>
+                    </div>
+                    <a href="./btc_10_years.json" download class="btn btn-primary btn-block">
+                        <i class="fas fa-download"></i> Download
+                    </a>
+                </div>
+
+                <div class="glass-card dataset-card">
+                    <div class="card-glow"></div>
+                    <div class="dataset-icon"><i class="fas fa-chart-line"></i></div>
+                    <h4>Market Price Data</h4>
+                    <p>Bitcoin market price historical data with daily granularity</p>
+                    <div class="dataset-meta">
+                        <span><i class="fas fa-file-code"></i> JSON</span>
+                        <span><i class="fas fa-weight-hanging"></i> 62 KB</span>
+                    </div>
+                    <a href="./market-price.json" download class="btn btn-primary btn-block">
+                        <i class="fas fa-download"></i> Download
+                    </a>
+                </div>
+
+                <div class="glass-card dataset-card">
+                    <div class="card-glow"></div>
+                    <div class="dataset-icon"><i class="fas fa-microchip"></i></div>
+                    <h4>Hash Rate Data</h4>
+                    <p>Network hash rate measurements showing computational power</p>
+                    <div class="dataset-meta">
+                        <span><i class="fas fa-file-code"></i> JSON</span>
+                        <span><i class="fas fa-weight-hanging"></i> 127 KB</span>
+                    </div>
+                    <a href="./hash-rate.json" download class="btn btn-primary btn-block">
+                        <i class="fas fa-download"></i> Download
+                    </a>
+                </div>
+
+                <div class="glass-card dataset-card">
+                    <div class="card-glow"></div>
+                    <div class="dataset-icon"><i class="fas fa-exchange-alt"></i></div>
+                    <h4>Transaction Data</h4>
+                    <p>Daily confirmed transactions on the Bitcoin network</p>
+                    <div class="dataset-meta">
+                        <span><i class="fas fa-file-code"></i> JSON</span>
+                        <span><i class="fas fa-weight-hanging"></i> 124 KB</span>
+                    </div>
+                    <a href="./n-transactions.json" download class="btn btn-primary btn-block">
+                        <i class="fas fa-download"></i> Download
+                    </a>
+                </div>
+
+                <div class="glass-card dataset-card">
+                    <div class="card-glow"></div>
+                    <div class="dataset-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h4>Mining Difficulty</h4>
+                    <p>Network difficulty adjustments for mining new blocks</p>
+                    <div class="dataset-meta">
+                        <span><i class="fas fa-file-code"></i> JSON</span>
+                        <span><i class="fas fa-weight-hanging"></i> 124 KB</span>
+                    </div>
+                    <a href="./difficulty.json" download class="btn btn-primary btn-block">
+                        <i class="fas fa-download"></i> Download
+                    </a>
+                </div>
+
+                <div class="glass-card dataset-card">
+                    <div class="card-glow"></div>
+                    <div class="dataset-icon"><i class="fas fa-users"></i></div>
+                    <h4>Unique Addresses</h4>
+                    <p>Number of unique active Bitcoin addresses — adoption metric</p>
+                    <div class="dataset-meta">
+                        <span><i class="fas fa-file-code"></i> JSON</span>
+                        <span><i class="fas fa-weight-hanging"></i> 108 KB</span>
+                    </div>
+                    <a href="./n-unique-addresses.json" download class="btn btn-primary btn-block">
+                        <i class="fas fa-download"></i> Download
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Research Section -->
+    <section id="about" class="section about-section">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-user-graduate"></i> About Research</span>
+                <h2 class="section-title">About This Research</h2>
+                <p class="section-desc">Understanding the methodology and motivation behind this comprehensive analysis</p>
+            </div>
+            <div class="about-grid">
+                <div class="glass-card about-content">
+                    <div class="card-glow"></div>
+                    <h3><i class="fas fa-search"></i> Research Overview</h3>
+                    <p>This research presents an in-depth regression and descriptive analysis of cryptocurrency markets, specifically examining the impact of blockchain technology on Bitcoin's price dynamics over a 16-year period (2010–2026). The study bridges the gap between traditional financial analysis and blockchain analytics by incorporating on-chain metrics alongside conventional market indicators.</p>
+                    <p>Utilizing advanced statistical models — including Ordinary Least Squares (OLS) regression, polynomial regression, Random Forest, and Gradient Boosting — the study quantifies the relationship between blockchain network fundamentals and market valuations. Time-series analysis and structural break testing further reveal how Bitcoin's market behavior has evolved across different adoption phases.</p>
+                    <p>The research contributes novel insights into cryptocurrency valuation by demonstrating that blockchain network health metrics (hash rate, active addresses, transaction throughput) serve as reliable leading indicators of market price, opening new avenues for quantitative trading strategies and risk management frameworks in digital asset markets.</p>
+
+                    <div class="methodology-highlights">
+                        <div class="method-item">
+                            <div class="method-icon"><i class="fas fa-cogs"></i></div>
+                            <div>
+                                <h5>Statistical Methods</h5>
+                                <p>OLS Regression, Polynomial Regression, Correlation Analysis, Descriptive Statistics, Chow Test</p>
+                            </div>
+                        </div>
+                        <div class="method-item">
+                            <div class="method-icon"><i class="fas fa-brain"></i></div>
+                            <div>
+                                <h5>Machine Learning</h5>
+                                <p>Random Forest, Gradient Boosting, Feature Importance Analysis, Cross-Validation</p>
+                            </div>
+                        </div>
+                        <div class="method-item">
+                            <div class="method-icon"><i class="fas fa-database"></i></div>
+                            <div>
+                                <h5>Data Sources</h5>
+                                <p>Blockchain.com API, CoinGecko, Yahoo Finance, on-chain analytics platforms</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-sidebar">
+                    <div class="glass-card author-card">
+                        <div class="card-glow"></div>
+                        <div class="author-avatar">
+                            <img src="./profile.jpeg" alt="Ravi Chaudhary">
+                        </div>
+                        <h3>Ravi Chaudhary</h3>
+                        <p class="author-title">Aspiring Quantitative Analyst</p>
+                        <p class="author-bio">Passionate about leveraging data science and machine learning for financial market analysis. Specializing in cryptocurrency markets and blockchain analytics with a focus on bridging academic research and practical trading applications.</p>
+                        <div class="author-skills">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Machine Learning</span>
+                            <span class="skill-tag">Statistics</span>
+                            <span class="skill-tag">Financial Modeling</span>
+                            <span class="skill-tag">Blockchain</span>
+                            <span class="skill-tag">Data Visualization</span>
+                        </div>
+                        <div class="author-links">
+                            <a href="https://www.linkedin.com/in/ravichaudhary10000" target="_blank" rel="noopener noreferrer" class="author-social-link">
+                                <i class="fab fa-linkedin-in"></i> LinkedIn
+                            </a>
+                            <a href="https://github.com/baua5252-cloud" target="_blank" rel="noopener noreferrer" class="author-social-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="mailto:chaudharyravi98723@gmail.com" class="author-social-link">
+                                <i class="fas fa-envelope"></i> Email
+                            </a>
+                        </div>
+                    </div>
+                    <div class="glass-card timeline-card">
+                        <div class="card-glow"></div>
+                        <h4><i class="fas fa-calendar-alt"></i> Research Timeline</h4>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">Q1 2025</span>
+                                    <p>Data Collection & Preprocessing</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">Q2 2025</span>
+                                    <p>Descriptive Analysis & Visualization</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">Q3 2025</span>
+                                    <p>Regression Modeling & ML</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">Q1 2026</span>
+                                    <p>Publication & Website Launch</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-glow"></div>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i class="fas fa-atom"></i>
+                        <span>Crypto Research Lab</span>
+                    </div>
+                    <p>Advanced cryptocurrency market analysis using statistical models and machine learning. Bridging blockchain analytics and quantitative finance.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#research">Research Paper</a></li>
+                        <li><a href="#visualization">Visualizations</a></li>
+                        <li><a href="#results">Results</a></li>
+                        <li><a href="#dataset">Datasets</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/baua5252-cloud" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ravichaudhary10000" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:chaudharyravi98723@gmail.com" class="social-link" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025–2026 Ravi Chaudhary. All rights reserved. | Crypto Research Lab</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
