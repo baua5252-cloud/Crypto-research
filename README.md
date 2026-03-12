@@ -7,7 +7,7 @@
 ## Overview
 This repository contains the source code, interactive data visualizations, and full complete empirical research paper for an exhaustive study on cryptocurrency markets. The project bridges the gap between theoretical econometrics and practical blockchain analytics, focusing primarily on Bitcoin's market behavior over a 16-year period.
 
-### 🌐 Live Website: [View the Interactive Research Portfolio](https://baua5252-cloud.github.io/Crypto-research/)
+### 🌐 Live Website: [[View the Interactive Research Portfolio](https://ravichaudhary-crypto.surge.sh/)](https://baua5252-cloud.github.io/Crypto-research/)
 
 ## Key Research Components
 
